@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Startpage</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container">
+      <section id="weather">
+        <p class="command_category">$ weather</p>
+        <p id="wttr"></p>
+      </section>
+      <section class="links">
+        <p class="command_category">$ webpages</p>
+        <div>
+          <ul>
+            <li><a href="https://web.telegram.org/k">Telegram</a></li>
+            <li><a href="https://open.spotify.com">Spotify</a></li>
+            <li><a href="https://trakt.tv">Trakt</a></li>
+            <li><a href="https://discord.com/app">Discord</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://tabnews.com.br">Tabnews</a></li>
+            <li><a href="https://brsociety.club">BrSociety</a></li>
+            <li><a href="http://localhost:8112">Deluge</a></li>
+            <li><a href="https://hubwarez.tv">HubWarez</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://chatgpt.com/">ChagGPT</a></li>
+            <li><a href="https://www.torrentleech.org/">TorrentLeech</a></li>
+            <li><a href="https://github.com/">Github</a></li>
+            <li><a href="https://goodreads.com">Goodreads</a></li>
+          </ul>
+        </div>
+      </section>
+      <section id="motd">
+        <p class="command_category">$ motd</p>
+        <figure>
+          <blockquote id="quote"></blockquote>
+          <figcaption id="author"></figcaption>
+        </figure>
+      </section>
+      <div class="add_link_modal hideMenu">
+        <textarea
+          class="websites_list"
+          placeholder="Title,https://website.com"
+        ></textarea>
+      </div>
+      <button class="add_link_btn">+</button>
+    </main>
+    <script src="main.js"></script>
+    <script src="motd.js"></script>
+  </body>
+</html>

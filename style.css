@@ -17,6 +17,7 @@ body {
   font-family: var(--text-font);
   color: var(--text-color);
   font-size: 15px;
+  background-color: #111111;
 }
 
 h1 {
